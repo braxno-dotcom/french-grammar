@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇫🇷</text></svg>">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Français">
+<title>Французская грамматика — справочник и тренажёр на русском</title>
+<meta name="description" content="Бесплатные инструменты французской грамматики с объяснениями на русском: спряжение глаголов, артикли и род, местоимения, прошедшие времена, subjonctif, интерактивный тренажёр.">
+<meta property="og:title" content="Французская грамматика на русском — справочник и тренажёр">
+<meta property="og:description" content="Спряжение глаголов, артикли, местоимения, passé composé vs imparfait, subjonctif — с понятными объяснениями на русском языке.">
+<meta property="og:type" content="website">
+<meta name="keywords" content="французская грамматика, французский язык, спряжение французских глаголов, артикли французский, passé composé, imparfait, subjonctif, французский для русских">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f0eb;
+    color: #2c2c2c;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 700px;
+  }
+  h1 { font-size: 1.8em; font-weight: 600; margin-bottom: 8px; color: #333; }
+  p { color: #888; margin-bottom: 36px; font-size: 0.95em; }
+  .cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .card {
+    display: block;
+    text-decoration: none;
+    background: white;
+    border-radius: 16px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 200px;
+    flex: 1;
+    border-top: 4px solid #2a4a7f;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+  }
+  .card .icon { font-size: 3em; display: block; margin-bottom: 14px; }
+  .card .label { font-size: 1.1em; font-weight: 600; color: #333; display: block; }
+  .card .sub { font-size: 0.82em; color: #999; margin-top: 6px; display: block; }
+  .card .count { font-size: 0.75em; color: #2a4a7f; margin-top: 8px; display: block; font-weight: 600; }
+
+  .info {
+    margin-top: 36px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: left;
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.6;
+  }
+  .info h3 { color: #2a4a7f; margin-bottom: 8px; font-size: 1em; }
+
+  @media (max-width: 500px) {
+    .cards { flex-direction: column; }
+    .card { padding: 28px 24px; }
+    h1 { font-size: 1.4em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🇫🇷 Французский язык</h1>
+  <p>Инструменты французской грамматики с объяснениями на русском</p>
+
+  <div class="cards">
+    <a href="french-verbs.html" class="card">
+      <span class="icon">📝</span>
+      <span class="label">Спряжение глаголов</span>
+      <span class="sub">Все времена, 3 группы, неправильные глаголы</span>
+      <span class="count">~100 глаголов</span>
+    </a>
+    <a href="french-articles.html" class="card">
+      <span class="icon">🔤</span>
+      <span class="label">Артикли и род</span>
+      <span class="sub">le/la/les, du/de la, au/à la, стягивания</span>
+      <span class="count">~120 существительных</span>
+    </a>
+    <a href="french-pronouns.html" class="card">
+      <span class="icon">🔄</span>
+      <span class="label">Местоимения</span>
+      <span class="sub">Личные, y, en, порядок двойных местоимений</span>
+      <span class="count">8 типов • таблица порядка</span>
+    </a>
+    <a href="french-past-tenses.html" class="card">
+      <span class="icon">⏳</span>
+      <span class="label">Прошедшие времена</span>
+      <span class="sub">Passé composé vs imparfait, согласование participe passé</span>
+      <span class="count">~60 глаголов • être/avoir</span>
+    </a>
+    <a href="french-subjunctive.html" class="card">
+      <span class="icon">🎭</span>
+      <span class="label">Subjonctif</span>
+      <span class="sub">Триггеры, спряжение, примеры использования</span>
+      <span class="count">~50 триггеров • ~40 глаголов</span>
+    </a>
+    <a href="french-quiz.html" class="card">
+      <span class="icon">🧠</span>
+      <span class="label">Тренажёр</span>
+      <span class="sub">Артикли, род, глаголы, предлоги — интерактивные тесты</span>
+      <span class="count">5 тем • ~500 вопросов</span>
+    </a>
+  </div>
+
+  <div class="info">
+    <h3>💡 Чем французский интересен?</h3>
+    <p>
+      <b>Глаголы</b> спрягаются по 3 группам: -er (parler), -ir (finir), -re (vendre), плюс десятки неправильных (être, avoir, aller, faire…). Устные формы часто совпадают, а письменные — все разные.<br>
+      <b>Артикли</b> обязательны почти всегда — даже там, где в русском ничего нет: «J'aime <b>le</b> café» (люблю кофе). Род непредсказуем: «la table» (стол — ж.р.), «le lit» (кровать — м.р.).<br>
+      <b>Местоимения</b> ставятся перед глаголом и могут идти парами: «Il <b>me le</b> donne» (он мне это даёт). Порядок строго фиксирован.<br>
+      <b>Subjonctif</b> — особое наклонение после выражений чувств, воли, сомнения: «Il faut que tu <b>saches</b>» (надо, чтобы ты знал). В русском аналога нет.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
